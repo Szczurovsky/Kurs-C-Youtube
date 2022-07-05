@@ -36,6 +36,7 @@ namespace Kurs_Youtube.Zadania.Aplikacja_kontakty
             Console.WriteLine("Podaj nazwę użytkownika, którego chcesz znaleźć!");
             string inputNazwa = Console.ReadLine();
             WyświetlPoNazwa(inputNazwa, Contacts);
+
         }
         public static Dictionary<string, Kontakt> GetContacts()
         {
@@ -69,11 +70,10 @@ namespace Kurs_Youtube.Zadania.Aplikacja_kontakty
         }
         public static void WyświetlPoNazwa(string nazwa, Dictionary<string, Kontakt> Contacts)
         {
-            List<Kontakt> nazwaKontaktu = new List<Kontakt>();
-            nazwaKontaktu.Add(Contacts.First(obj => obj.Value.Nazwa == nazwa).Value);
+            List<int> nazwaKontaktu = Contacts.Where(x=>x.Value.Nazwa == nazwa).Select(x => x.Value.Numer_telefonu).ToList();
             foreach (var item in nazwaKontaktu)
             {
-                Console.WriteLine($"Nazwa kontaktu: {item.Nazwa}, numer: {item.Numer_telefonu}");
+                Console.WriteLine($"Nazwa kontaktu: {nazwa}, numer: {item}");
             }
         
         }

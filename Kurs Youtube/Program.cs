@@ -7,5 +7,5 @@
 //Switch();
 //using static Kurs_Youtube.zad_iterowanie_po_danych;
 //IterowanieDanych();
-using static Kurs_Youtube.Zadania.zad_02_14_enum;
-EnumRead();
+using static Kurs_Youtube.Zadania.Aplikacja_kontakty.Aplikacja;
+Apka ();
