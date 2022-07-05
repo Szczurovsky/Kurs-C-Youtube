@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Kurs_Youtube.Zadania.Aplikacja_kontakty
 {
+    //dodac petle i wrzucic do case
     internal class Aplikacja
     {
        
@@ -33,9 +34,10 @@ namespace Kurs_Youtube.Zadania.Aplikacja_kontakty
             Console.WriteLine("Podaj numer użytkownika, którego chcesz znaleźć!");
             int NumberInput = int.Parse(Console.ReadLine());
             WyświetlPoNumerze(NumberInput, Contacts);
-            Console.WriteLine("Podaj nazwę użytkownika, którego chcesz znaleźć!");
-            string inputNazwa = Console.ReadLine();
-            WyświetlPoNazwa(inputNazwa, Contacts);
+            
+           
+            WyświetlPoNazwa( Contacts);
+            RemoveContact(Contacts); 
 
         }
         public static Dictionary<string, Kontakt> GetContacts()
@@ -53,8 +55,16 @@ namespace Kurs_Youtube.Zadania.Aplikacja_kontakty
             string inputName = Console.ReadLine();
             Console.WriteLine("Proszę wpisać numer telefonu");
             int inputNumber = int.Parse(Console.ReadLine());
-            Contacts.Add(inputName, new Kontakt(inputName, inputNumber));
-            return Contacts;
+            if (inputNumber.ToString().Length >= 9 && inputName.Length >= 3)
+            {
+                Contacts.Add(inputName, new Kontakt(inputName, inputNumber));
+                return Contacts;
+            }
+            else
+            {
+                Console.WriteLine("Nie wprowadziłeś poprawnego numeru lub wprowadzona przez Ciebie nazwa jest za krótka");
+                return Contacts;
+            }
         }
         public static void WyświetlKontakty(Dictionary<string, Kontakt> Contacts)
         {
@@ -68,14 +78,25 @@ namespace Kurs_Youtube.Zadania.Aplikacja_kontakty
             var kontakt = Contacts.SingleOrDefault(obj=>obj.Value.Numer_telefonu == numer).Value;   
             Console.WriteLine($"Nazwa kontaktu: {kontakt.Nazwa}, numer telefonu: {kontakt.Numer_telefonu}");
         }
-        public static void WyświetlPoNazwa(string nazwa, Dictionary<string, Kontakt> Contacts)
+        public static void WyświetlPoNazwa( Dictionary<string, Kontakt> Contacts)
         {
+            Console.WriteLine("Podaj nazwę użytkownika, którego chcesz znaleźć!");
+            string nazwa = Console.ReadLine();
             List<int> nazwaKontaktu = Contacts.Where(x=>x.Value.Nazwa == nazwa).Select(x => x.Value.Numer_telefonu).ToList();
             foreach (var item in nazwaKontaktu)
             {
                 Console.WriteLine($"Nazwa kontaktu: {nazwa}, numer: {item}");
             }
         
+        }
+        public static Dictionary<string,Kontakt> RemoveContact(Dictionary<string, Kontakt> Contacts)
+        {
+            Console.WriteLine("Podaj numer kontaktu ktory chcesz usunąć");
+            int numberToRemove = int.Parse(Console.ReadLine());
+            var kontakt = Contacts.SingleOrDefault(obj => obj.Value.Numer_telefonu == numberToRemove);
+            Contacts.Remove(kontakt.Key);
+            WyświetlKontakty(Contacts);
+            return Contacts;
         }
     }
 }
