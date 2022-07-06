@@ -7,5 +7,5 @@
 //Switch();
 //using static Kurs_Youtube.zad_iterowanie_po_danych;
 //IterowanieDanych();
-using static Kurs_Youtube.Zadania.Aplikacja_kontakty.Aplikacja;
-Apka ();
+using static Kurs_Youtube.Zadania.zad_06_02_plikitxt;
+Program ();

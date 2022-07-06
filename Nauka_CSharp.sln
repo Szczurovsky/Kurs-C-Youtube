@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kurs Youtube", "Kurs Youtube\Kurs Youtube.csproj", "{A1CF5E2A-0BE3-4D5C-BB82-CAEE4E19252D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dodatkowe_cwiczenia", "Dodatkowe_cwiczenia\Dodatkowe_cwiczenia.csproj", "{8ECFA5E6-0911-4876-B17B-D7FB5D7EC616}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kurs_Youtube", "Kurs_Youtube\Kurs_Youtube.csproj", "{CADBBB28-12B2-44E2-A4EB-F48FE7CEF61D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A1CF5E2A-0BE3-4D5C-BB82-CAEE4E19252D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A1CF5E2A-0BE3-4D5C-BB82-CAEE4E19252D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A1CF5E2A-0BE3-4D5C-BB82-CAEE4E19252D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A1CF5E2A-0BE3-4D5C-BB82-CAEE4E19252D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8ECFA5E6-0911-4876-B17B-D7FB5D7EC616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8ECFA5E6-0911-4876-B17B-D7FB5D7EC616}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ECFA5E6-0911-4876-B17B-D7FB5D7EC616}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ECFA5E6-0911-4876-B17B-D7FB5D7EC616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADBBB28-12B2-44E2-A4EB-F48FE7CEF61D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADBBB28-12B2-44E2-A4EB-F48FE7CEF61D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADBBB28-12B2-44E2-A4EB-F48FE7CEF61D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADBBB28-12B2-44E2-A4EB-F48FE7CEF61D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

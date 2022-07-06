@@ -8,4 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Zadania\CodeWars\" />
+    <Folder Include="Zadania\PlikiTekstowe\" />
+  </ItemGroup>
+
 </Project>
