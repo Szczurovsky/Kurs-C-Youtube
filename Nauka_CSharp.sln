@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dodatkowe_cwiczenia", "Doda
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kurs_Youtube", "Kurs_Youtube\Kurs_Youtube.csproj", "{CADBBB28-12B2-44E2-A4EB-F48FE7CEF61D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RogueLike", "..\Rogalik\RogueLike\RogueLike.csproj", "{6848817A-24B9-477B-8B3E-87E44AD4C58A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RogueLike", "..\Rogalik\RogueLike\RogueLike.csproj", "{6848817A-24B9-477B-8B3E-87E44AD4C58A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forms1", "Forms1\Forms1.csproj", "{78C31B6A-BB24-458D-8079-DACC462BFB4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{18B5D480-142B-4DE0-BBDA-62E94179E4E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{6848817A-24B9-477B-8B3E-87E44AD4C58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6848817A-24B9-477B-8B3E-87E44AD4C58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6848817A-24B9-477B-8B3E-87E44AD4C58A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C31B6A-BB24-458D-8079-DACC462BFB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C31B6A-BB24-458D-8079-DACC462BFB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C31B6A-BB24-458D-8079-DACC462BFB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C31B6A-BB24-458D-8079-DACC462BFB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B5D480-142B-4DE0-BBDA-62E94179E4E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B5D480-142B-4DE0-BBDA-62E94179E4E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B5D480-142B-4DE0-BBDA-62E94179E4E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B5D480-142B-4DE0-BBDA-62E94179E4E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

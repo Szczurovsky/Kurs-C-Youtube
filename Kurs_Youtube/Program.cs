@@ -1,5 +1,6 @@
 ﻿using System;
-
+using System.Threading.Tasks;
+using static Kurs_Youtube.Zadania.WebScrapping.Program;
 //using static Kurs_Youtube.zad_02_06;
 //isLegal();
 
@@ -7,5 +8,7 @@
 //Switch();
 //using static Kurs_Youtube.zad_iterowanie_po_danych;
 //IterowanieDanych();
-using static Kurs_Youtube.Zadania.Kurs_typow_generycznych.GenericProject;
-Program ();
+
+ 
+ProgramStart();
+
